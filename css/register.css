@@ -1,0 +1,72 @@
+body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  .register {
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+  }
+  
+  
+
+.bg-image{
+    background-image: url("register_bg.jpg");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+
+.register-frame {
+    margin: 0 auto;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.register-form{
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+}
+
+
+.login-btn {
+    font-size: 12px;
+    text-decoration: none;
+
+} 
+.register-btn {
+    margin-bottom: 40px;
+    position: absolute;
+    right: 40px;
+}
+
+.title-text{
+    margin-top: 80px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.error-message{
+    position: absolute;
+    bottom: 10px;
+}

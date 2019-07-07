@@ -21,11 +21,10 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/register.css" />
     <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet">
-    <title>Home page</title>
+    <title>Staff page</title>
 </head>
-
 <body>
-<?php 
+    <?php 
         include_once("./navbar.php");
     ?>
     <div class="container" style="display: inline-block;background: gray">
@@ -35,8 +34,6 @@
         <button style="float:right" type="submit" class="btn btn-primary register-btn"><a
                 href="./logout.php">Logout</a></button>
     </div>
-
-
 </body>
 
 </html>

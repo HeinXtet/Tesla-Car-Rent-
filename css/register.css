@@ -21,7 +21,7 @@ body, html {
 
 .bg-image{
     background-image: url("register_bg.jpg");
-    filter: blur(8px);
+    filter: blur(4px);
     -webkit-filter: blur(8px);
     height: 100%; 
     background-position: center;

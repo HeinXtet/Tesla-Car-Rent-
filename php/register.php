@@ -1,9 +1,15 @@
 <?php
 session_start();
-if (isset($_SESSION['email']))
-    header("location:home.php")
+if (isset($_SESSION['email'])) {
+    if(isset($_SESSION['role'])){
+        if ($_SESSION['role'] == 0){
+            header("location:staff.php");
+        }else{
+            header("location:home.php");
+        }
+    }
+}
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 

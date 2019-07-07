@@ -21,13 +21,19 @@ if (!$result) {
 while ($row = mysqli_fetch_array($result))
 {
         $d[] = $row['email'];
+        $role = $row['role'];
         $d[] = $row['password'];
         var_dump($d);
 }
 
 if (mysqli_num_rows($result) == 1) {
     $_SESSION['email'] = $email;
-    header('location:home.php');
+    $_SESSION['role'] = $role;
+    if($role == 0){
+        header('location:staff.php');
+    }else{
+        header('location:home.php');
+    }
 } else {
     $_SESSION['error'] = "User given data is Invalid.";
     header('location:login.php');
